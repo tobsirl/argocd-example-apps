@@ -8,7 +8,7 @@ spec:
     namespace: argocdappdemo
     server: "https://kubernetes.default.svc"
   source:
-    path: Nginx_Deployment_ArgoCD_Apps
+    path: Demo_Files/Nginx_Deployment_ArgoCD_Apps
     repoURL: "https://github.com/tobsirl/argocd-example-apps.git"
     targetRevision: HEAD
   project: default
