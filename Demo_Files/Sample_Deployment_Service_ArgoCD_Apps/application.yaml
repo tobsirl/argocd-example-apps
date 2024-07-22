@@ -6,15 +6,15 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/SMACAcademy/ArgoCD-Complete-Master-Course.git'
+    repoURL: "https://github.com/tobsirl/argocd-example-apps.git"
     targetRevision: HEAD
-    path: 0-Demo_Files/Sample_Deployment_Service
-  destination: 
+    path: Demo_Files/Sample_Deployment_Service
+  destination:
     server: https://kubernetes.default.svc
     namespace: ns-sample-deployment-service
   syncPolicy:
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
     automated:
       selfHeal: true
       prune: true
